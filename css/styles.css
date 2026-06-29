@@ -1,7 +1,7 @@
 /* =========================================================
    RAÍCES Y ALAS EDUCACIÓN
    Hoja de estilos principal
-   Diseño responsive, accesible y con estética pastel
+   Fondo floral permanente + diseño responsive
    ========================================================= */
 
 :root {
@@ -47,10 +47,13 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-ink);
-  background:
-    radial-gradient(circle at 10% 10%, rgba(248, 215, 218, 0.55), transparent 32rem),
-    radial-gradient(circle at 90% 0%, rgba(216, 240, 223, 0.65), transparent 28rem),
-    var(--color-beige-50);
+
+  background-image: url("../assets/img/fondo-floral.jpeg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   line-height: 1.65;
   overflow-x: hidden;
 }
@@ -109,6 +112,7 @@ a {
 
 .section {
   padding: clamp(4rem, 8vw, 7.5rem) 0;
+  background: transparent;
 }
 
 .section-heading {
@@ -139,8 +143,8 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
-  letter-spacing: -0.05em;
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  letter-spacing: -0.04em;
 }
 
 h2 {
@@ -205,9 +209,10 @@ p {
 }
 
 .button--ghost {
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.85);
   color: var(--color-ink);
   box-shadow: var(--shadow-card);
+  backdrop-filter: blur(6px);
 }
 
 /* Header y navegación */
@@ -216,7 +221,7 @@ p {
   top: 0;
   z-index: 50;
   min-height: var(--header-height);
-  background: rgba(255, 250, 242, 0.82);
+  background: rgba(255, 250, 242, 0.84);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(77, 66, 56, 0.08);
 }
@@ -241,18 +246,6 @@ p {
   flex-shrink: 0;
 }
 
-/* Logo antiguo por si en algún sitio se usa el emoji */
-.brand__mark {
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-mint-100), var(--color-rose-100));
-  box-shadow: 0 8px 18px rgba(77, 66, 56, 0.09);
-}
-
-/* Logo nuevo con imagen real */
 .brand__logo {
   width: 58px;
   height: 58px;
@@ -296,7 +289,7 @@ p {
 .nav-menu a:hover,
 .nav-menu a.is-active {
   color: var(--color-ink);
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .nav-menu__cta {
@@ -310,7 +303,7 @@ p {
   height: 48px;
   border: 0;
   border-radius: 50%;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow-card);
   position: relative;
 }
@@ -344,6 +337,7 @@ p {
   display: grid;
   align-items: center;
   overflow: hidden;
+  background: transparent;
 }
 
 .hero__grid {
@@ -379,12 +373,13 @@ p {
 }
 
 .hero__badges li {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.76);
   border: 1px solid rgba(77, 66, 56, 0.08);
   padding: 0.55rem 0.85rem;
   border-radius: 999px;
   font-weight: 800;
   box-shadow: 0 8px 20px rgba(77, 66, 56, 0.06);
+  backdrop-filter: blur(6px);
 }
 
 .hero__visual {
@@ -397,27 +392,7 @@ p {
 }
 
 .hero__decor {
-  position: absolute;
-  border-radius: 999px;
-  filter: blur(2px);
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.hero__decor--one {
-  width: 16rem;
-  height: 16rem;
-  left: -5rem;
-  top: 8rem;
-  background: var(--color-rose-100);
-}
-
-.hero__decor--two {
-  width: 20rem;
-  height: 20rem;
-  right: -6rem;
-  bottom: 2rem;
-  background: var(--color-sky-100);
+  display: none;
 }
 
 @keyframes float {
@@ -438,19 +413,36 @@ p {
   align-items: start;
 }
 
-.about-preview__text {
-  background: rgba(255, 255, 255, 0.72);
+.about-preview__text,
+.card,
+.emotion-card,
+.service-card,
+.blog-card,
+.contact-form,
+.download-form,
+.testimonial-card,
+.values article,
+.calendar,
+.cta__box,
+.contact__info {
+  background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(77, 66, 56, 0.08);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(6px);
+}
+
+.about-preview__text {
   border-radius: var(--radius-lg);
   padding: clamp(1.5rem, 3vw, 2.35rem);
-  box-shadow: var(--shadow-card);
   font-size: 1.1rem;
 }
 
 .featured,
 .resources,
-.blog {
-  background: rgba(255, 255, 255, 0.42);
+.blog,
+.emotions,
+.contact {
+  background: transparent;
 }
 
 .carousel {
@@ -482,7 +474,7 @@ p {
   height: 46px;
   border: 0;
   border-radius: 50%;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--color-ink);
   box-shadow: var(--shadow-card);
   font-size: 2rem;
@@ -499,15 +491,13 @@ p {
 
 .card {
   height: 100%;
-  background: var(--color-white);
-  border: 1px solid rgba(77, 66, 56, 0.08);
   border-radius: var(--radius-lg);
   padding: 1.35rem;
-  box-shadow: var(--shadow-card);
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
-.card:hover {
+.card:hover,
+.emotion-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-soft);
   border-color: rgba(234, 166, 174, 0.55);
@@ -548,7 +538,7 @@ p {
 
 .chip {
   border: 1px solid rgba(77, 66, 56, 0.1);
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--color-muted);
   border-radius: 999px;
   padding: 0.6rem 0.95rem;
@@ -566,9 +556,6 @@ p {
 .testimonial-card {
   max-width: 840px;
   margin: 2.5rem auto 0;
-  background: linear-gradient(135deg, var(--color-white), var(--color-rose-50));
-  border: 1px solid rgba(77, 66, 56, 0.08);
-  box-shadow: var(--shadow-soft);
   border-radius: var(--radius-lg);
   padding: clamp(1.5rem, 4vw, 3rem);
   text-align: center;
@@ -596,9 +583,7 @@ p {
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 2rem;
-  background: linear-gradient(135deg, var(--color-mint-100), var(--color-yellow-100));
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -620,11 +605,12 @@ p {
   grid-template-columns: 160px 1fr;
   gap: 1.3rem;
   align-items: center;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(77, 66, 56, 0.08);
   border-radius: var(--radius-lg);
   padding: 1.35rem;
   box-shadow: var(--shadow-card);
+  backdrop-filter: blur(6px);
 }
 
 .team-card__avatar {
@@ -647,10 +633,8 @@ p {
 }
 
 .values article {
-  background: rgba(255, 255, 255, 0.72);
   border-radius: var(--radius-md);
   padding: 1.25rem;
-  border: 1px solid rgba(77, 66, 56, 0.08);
 }
 
 .values p {
@@ -695,22 +679,14 @@ p {
 }
 
 /* Emociones */
-.emotions {
-  background: linear-gradient(180deg, var(--color-beige-50), var(--color-sky-100));
-}
-
 .emotion-card {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(77, 66, 56, 0.08);
   border-radius: var(--radius-lg);
   padding: 1.35rem;
-  box-shadow: var(--shadow-card);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .emotion-card:hover {
   transform: translateY(-8px) rotate(-0.4deg);
-  box-shadow: var(--shadow-soft);
 }
 
 .emotion-card img {
@@ -731,11 +707,8 @@ p {
 
 /* Servicios y calendario */
 .service-card {
-  background: var(--color-white);
   border-radius: var(--radius-lg);
   padding: 1.35rem;
-  border: 1px solid rgba(77, 66, 56, 0.08);
-  box-shadow: var(--shadow-card);
 }
 
 .service-card__price {
@@ -746,9 +719,7 @@ p {
 
 .calendar {
   margin-top: 2rem;
-  background: linear-gradient(135deg, var(--color-white), var(--color-yellow-100));
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
   padding: clamp(1.25rem, 3vw, 2.25rem);
 }
 
@@ -762,7 +733,7 @@ p {
 .calendar__slot {
   border: 0;
   border-radius: 999px;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.75rem 1rem;
   color: var(--color-ink);
   font-weight: 900;
@@ -782,10 +753,7 @@ p {
 /* Blog */
 .blog-card {
   overflow: hidden;
-  background: var(--color-white);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(77, 66, 56, 0.08);
-  box-shadow: var(--shadow-card);
 }
 
 .blog-card__top {
@@ -812,14 +780,15 @@ p {
 }
 
 /* Contacto */
-.contact {
-  background: linear-gradient(135deg, var(--color-rose-50), var(--color-beige-100));
-}
-
 .contact__grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(2rem, 5vw, 5rem);
+}
+
+.contact__info {
+  border-radius: var(--radius-lg);
+  padding: clamp(1.25rem, 3vw, 2rem);
 }
 
 .contact__info p:not(.eyebrow) {
@@ -839,7 +808,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.8rem 1rem;
   border-radius: 999px;
   text-decoration: none;
@@ -854,11 +823,8 @@ p {
 
 .contact-form,
 .download-form {
-  background: var(--color-white);
   border-radius: var(--radius-lg);
   padding: clamp(1.25rem, 3vw, 2rem);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(77, 66, 56, 0.08);
 }
 
 .form-field {
@@ -876,7 +842,7 @@ textarea,
 select {
   width: 100%;
   border: 2px solid rgba(77, 66, 56, 0.12);
-  background: var(--color-beige-50);
+  background: rgba(255, 250, 242, 0.88);
   color: var(--color-ink);
   border-radius: 16px;
   padding: 0.9rem 1rem;
@@ -920,7 +886,7 @@ select:focus {
 .modal__content {
   position: relative;
   padding: 2rem;
-  background: var(--color-white);
+  background: rgba(255, 255, 255, 0.96);
   text-align: center;
 }
 
@@ -949,9 +915,10 @@ select:focus {
 
 /* Footer */
 .footer {
-  background: #4d4238;
+  background: rgba(77, 66, 56, 0.94);
   color: var(--color-white);
   padding: 3rem 0 1rem;
+  backdrop-filter: blur(6px);
 }
 
 .footer__grid {
@@ -959,10 +926,6 @@ select:focus {
   grid-template-columns: 1.1fr 0.8fr 0.4fr;
   gap: 2rem;
   align-items: start;
-}
-
-.brand--footer .brand__mark {
-  background: linear-gradient(135deg, var(--color-mint-100), var(--color-yellow-100));
 }
 
 .footer p {
@@ -1018,6 +981,7 @@ select:focus {
   transform: translateY(0);
 }
 
+/* Accesibilidad: reducir animaciones */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1029,7 +993,7 @@ select:focus {
   }
 }
 
-/* Responsive */
+/* Responsive tablet */
 @media (max-width: 980px) {
   .nav-toggle {
     display: inline-block;
@@ -1102,7 +1066,14 @@ select:focus {
   }
 }
 
+/* Responsive móvil */
 @media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+  }
+
   .container {
     width: min(100% - 1.15rem, var(--container));
   }
