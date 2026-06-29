@@ -1,0 +1,12 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" rx="56" fill="#FFF7EC"/>
+  <circle cx="150" cy="118" r="82" fill="#F8D7DA"/>
+  <path d="M92 202C103 169 123 151 150 151C177 151 197 169 208 202V246H92V202Z" fill="#D8F0DF"/>
+  <circle cx="150" cy="123" r="52" fill="#F2C6A0"/>
+  <path d="M97 125C99 76 119 45 153 45C187 45 208 77 204 128C189 104 169 91 143 91C123 91 108 102 97 125Z" fill="#8C5E46"/>
+  <circle cx="131" cy="124" r="5" fill="#4D4238"/>
+  <circle cx="169" cy="124" r="5" fill="#4D4238"/>
+  <path d="M132 150C144 159 157 159 169 150" stroke="#4D4238" stroke-width="5" stroke-linecap="round"/>
+  <path d="M202 62L217 76L202 91L187 76L202 62Z" fill="#EAA6AE"/>
+  <text x="150" y="273" text-anchor="middle" font-family="Quicksand, Arial" font-size="25" font-weight="800" fill="#4D4238">Patricia</text>
+</svg>

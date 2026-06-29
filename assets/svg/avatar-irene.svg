@@ -1,0 +1,12 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" rx="56" fill="#FFF7EC"/>
+  <circle cx="150" cy="118" r="82" fill="#DCEFFA"/>
+  <path d="M91 205C104 171 124 153 150 153C176 153 197 171 209 205V246H91V205Z" fill="#F8D7DA"/>
+  <circle cx="150" cy="124" r="52" fill="#F2C6A0"/>
+  <path d="M88 134C87 83 111 49 148 46C190 43 212 80 211 135C194 109 174 96 151 96C126 96 107 109 88 134Z" fill="#6E4938"/>
+  <circle cx="130" cy="126" r="5" fill="#4D4238"/>
+  <circle cx="169" cy="126" r="5" fill="#4D4238"/>
+  <path d="M132 151C145 160 158 160 171 151" stroke="#4D4238" stroke-width="5" stroke-linecap="round"/>
+  <path d="M104 82C116 64 133 55 154 55" stroke="#FFF0BF" stroke-width="8" stroke-linecap="round"/>
+  <text x="150" y="273" text-anchor="middle" font-family="Quicksand, Arial" font-size="25" font-weight="800" fill="#4D4238">Irene</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="680" height="620" viewBox="0 0 680 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustración educativa de Raíces y Alas</title>
+  <desc id="desc">Un árbol con raíces, hojas pastel, corazones, libros y pequeños elementos infantiles.</desc>
+  <rect x="42" y="45" width="596" height="520" rx="58" fill="#FFF7EC"/>
+  <circle cx="145" cy="125" r="58" fill="#F8D7DA"/>
+  <circle cx="540" cy="125" r="72" fill="#D8F0DF"/>
+  <circle cx="535" cy="455" r="86" fill="#DCEFFA"/>
+  <path d="M336 384C336 317 333 259 329 212" stroke="#9B755D" stroke-width="24" stroke-linecap="round"/>
+  <path d="M330 242C285 216 251 182 233 137" stroke="#9B755D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M335 236C385 211 420 176 442 130" stroke="#9B755D" stroke-width="18" stroke-linecap="round"/>
+  <path d="M333 281C292 268 258 246 232 216" stroke="#9B755D" stroke-width="15" stroke-linecap="round"/>
+  <path d="M339 282C386 264 421 238 447 203" stroke="#9B755D" stroke-width="15" stroke-linecap="round"/>
+  <ellipse cx="222" cy="126" rx="62" ry="44" fill="#94C9A9"/>
+  <ellipse cx="282" cy="92" rx="58" ry="43" fill="#D8F0DF"/>
+  <ellipse cx="376" cy="91" rx="64" ry="47" fill="#F8D7DA"/>
+  <ellipse cx="446" cy="132" rx="70" ry="48" fill="#9BC7E8"/>
+  <ellipse cx="265" cy="195" rx="72" ry="49" fill="#FFF0BF"/>
+  <ellipse cx="397" cy="196" rx="74" ry="50" fill="#D8F0DF"/>
+  <path d="M248 428C284 388 323 388 336 388C350 388 392 391 430 428" stroke="#9B755D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M331 389C310 421 293 445 274 471" stroke="#9B755D" stroke-width="9" stroke-linecap="round"/>
+  <path d="M342 389C364 421 386 446 410 472" stroke="#9B755D" stroke-width="9" stroke-linecap="round"/>
+  <path d="M326 391C314 432 312 467 311 499" stroke="#9B755D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M351 391C362 431 365 467 367 500" stroke="#9B755D" stroke-width="8" stroke-linecap="round"/>
+  <rect x="194" y="448" width="96" height="58" rx="13" fill="#F8D7DA" stroke="#4D4238" stroke-width="5"/>
+  <path d="M213 468H272M213 486H260" stroke="#4D4238" stroke-width="5" stroke-linecap="round"/>
+  <rect x="393" y="445" width="100" height="62" rx="14" fill="#DCEFFA" stroke="#4D4238" stroke-width="5"/>
+  <path d="M413 466H471M413 486H456" stroke="#4D4238" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="138" cy="392" r="32" fill="#F5CD6B"/>
+  <path d="M127 389C127 382 132 376 139 376C146 376 152 382 152 389C152 400 139 407 139 407C139 407 127 400 127 389Z" fill="#EAA6AE"/>
+  <circle cx="533" cy="322" r="34" fill="#F8D7DA"/>
+  <path d="M520 319C520 311 526 305 534 305C542 305 548 311 548 319C548 331 534 339 534 339C534 339 520 331 520 319Z" fill="#94C9A9"/>
+  <path d="M159 270C179 253 197 252 216 270" stroke="#9BC7E8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M468 272C490 250 516 250 538 272" stroke="#EAA6AE" stroke-width="10" stroke-linecap="round"/>
+  <text x="340" y="560" text-anchor="middle" font-family="Quicksand, Arial" font-size="30" font-weight="800" fill="#4D4238">Raíces y Alas</text>
+</svg>
